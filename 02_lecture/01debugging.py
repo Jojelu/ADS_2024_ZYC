@@ -17,8 +17,7 @@ else:
 
 print("After if/else branch")
 
-
-## More typecasting
+# More typecasting
 temperature = float(input("Please type in a temperature: "))
 
 print("The temperature is", temperature)

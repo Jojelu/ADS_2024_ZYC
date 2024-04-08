@@ -32,37 +32,37 @@ Modulo operator
 # print(f"The remainder when dividing 15 by 4 is: {remainder}")
 #
 # # Using modulo to check if a number is even or odd
-# number = 7
-#
-# # Check if the number is even
-# is_even = number % 2 == 0
-# print(f"Is the number {number} even? {is_even}")
-#
-# # Check if the number is odd
-# is_odd = number % 2 != 0
-# print(f"Is the number {number} odd? {is_odd}")
+number = 7
+
+# Check if the number is even
+is_even = number % 2 == 0
+print(f"Is the number {number} even? {is_even}")
+
+# Check if the number is odd
+is_odd = number % 2 != 0
+print(f"Is the number {number} odd? {is_odd}")
 
 """
 Division with corresponding results
 """
 # # Division with floating-point result
-# result_float = 15 / 4
-# print(f"Result of 15 / 4 (floating-point): {result_float}")
-#
-# # Division with integer result using floor division
-# result_integer = 15 // 4
-# print(f"Result of 15 // 4 (integer): {result_integer}")
+result_float = 15 / 4
+print(f"Result of 15 / 4 (floating-point): {result_float}")
+
+# Division with integer result using floor division
+result_integer = 15 // 4
+print(f"Result of 15 // 4 (integer): {result_integer}")
 
 """
 Numbers as input
 """
-# input_str = input("Which year were you born? ")
-# year = int(input_str)
-# print(f"Your age at the end of the year 2024: {2024 - year}")
+input_str = input("Which year were you born? ")
+year = int(input_str)
+print(f"Your age at the end of the year 2024: {2024 - year}")
 #
 # # You can even cast without using a second variable
-# year = int(input("Which year were you born? "))
-# print(f"Your age at the end of the year 2021: {2024 - year}")
+year = int(input("Which year were you born? "))
+print(f"Your age at the end of the year 2021: {2024 - year}")
 
 
 """
@@ -77,4 +77,7 @@ Numbers as input
 
 # print the sum of 3 numbers using two variables
 
+
 # print the sum of 3 numbers using 1 variable
+sum = int(input("First number: ")) + int(input("Second number: ")) + int(input("Third number: "))
+print(f"The sum of the numbers:{sum} ")

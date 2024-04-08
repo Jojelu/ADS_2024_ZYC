@@ -21,7 +21,7 @@ Referencing variables
 A single variable can be referred to many times in a program:
 """
 # name = input("What is your name? ")
-#
+
 # print("Hi, " + name + "!")
 # print(name + " is quite a nice name.")
 

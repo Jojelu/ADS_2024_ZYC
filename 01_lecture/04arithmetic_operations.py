@@ -41,6 +41,33 @@ print(f"Is the number {number} even? {is_even}")
 # Check if the number is odd
 is_odd = number % 2 != 0
 print(f"Is the number {number} odd? {is_odd}")
+#Calculate the remainder when dividing 15 by 4
+remainder = 15 % 4
+print(f"The remainder when dividing 15 by 4 is: {remainder}")
+
+# Using modulo to check if a number is even or odd
+number = 7
+
+# Check if the number is even
+is_even = number % 2 == 0
+print(f"Is the number {number} even? {is_even}")
+
+# Check if the number is odd
+is_odd = number % 2 != 0
+print(f"Is the number {number} odd? {is_odd}")
+
+# 123
+# 321
+n1 = 123
+
+
+print(n1//100)
+print(n1%10)
+print(n1//10%10)
+
+print(f"{n1//100}{n1//10%10}{n1%10}")
+
+print(321)
 
 """
 Division with corresponding results

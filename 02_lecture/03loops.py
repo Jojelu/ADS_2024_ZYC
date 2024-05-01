@@ -11,15 +11,16 @@ as long as a specified condition is true. It has the following syntax:
 2. After executing the loop body, the condition is evaluated again. If it's still true, the loop body is executed again. This process continues until the condition becomes false.
 3. Once the condition becomes false, the control exits the loop, and the program continues with the code that follows the loop.
 """
-# i = 1
-# while i <= 5:
-#     print("Hello World!")
-#     i = i + 1
-#
-# j = 1
-# while j < 10:
-#     print(j)  # print(j, end="")
-#     j += 1
+i = 1
+while i <= 5:
+    print("Hello World!")
+    i = i + 1
+
+j = 1
+while j < 10:
+    print(j)
+    print(j, end="")
+    j += 1
 
 """
 While True - infinite loops

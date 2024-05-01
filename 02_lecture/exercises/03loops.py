@@ -15,6 +15,16 @@ Example:
 """
 # Write your solution here
 
+
+while True:
+    print("hello world!")
+    answer = input("shall we continue?\n")
+    if answer == "no":
+        break
+
+print("okay then")
+
+
 """
 Write a program which asks the user for integer numbers.
 

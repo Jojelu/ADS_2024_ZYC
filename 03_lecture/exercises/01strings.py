@@ -9,7 +9,9 @@ Example:
     heyheyheyhey
 """
 # Write your solution here
-
+# word = input("Please type in a string\n")
+# factor = int(input("Please type in an amount\n"))
+# print(word*factor)
 """
 Write a program which asks the user for two strings and then prints out whichever is the longer of the two - 
 that is, whichever has the more characters. If the strings are of equal length, the program 
@@ -27,7 +29,14 @@ Examples:
 """
 
 # Write your solution here
-
+# word1 = input("Please type in string 1\n")
+# word2 = input("Please type in string 2\n")
+# if len(word1) > len(word2):
+    # print(word1, "is longer")
+# elif len(word1) == len(word2):
+    # print("The strings are equally long.")
+# else:
+    # print(word2, "is longer")
 """
 Write a program which asks the user for a string. The program then prints out the input string in reversed order, 
 from end to beginning. Each character should be on a separate line.
@@ -36,6 +45,18 @@ Try to solve this example in 2 ways:
     * once using negative indeces
 """
 # Write your solution here
+
+# input_string = input("Please type in a string:\n")
+# index = 1
+# while index < len(input_string) + 1:
+   # print(input_string[len(input_string)-index])
+    # index += 1
+
+input_string = input("Please type in a string:\n")
+index = - 1
+while index > - len(input_string) - 1:
+    print(input_string[index])
+    index -= 1
 
 """
 Write a program which asks the user for a string. 

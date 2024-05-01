@@ -4,10 +4,11 @@ STRING OPERATIONS
 Strings can be combined -> concatenated with the `+` operator
 """
 
-# begin = "ex"
-# end = "ample"
-# word = begin+end
-# print(word) # prints: example
+begin = "ex"
+end = "ample"
+word = begin+end
+print(word)
+# prints: example
 
 """
 The `*` operator can also be used with a string, when the other operand is an integer. 
@@ -82,8 +83,8 @@ The following program loops through all the characters in a string from first to
 # input_string = input("Please type in a string: ")
 # index = 0
 # while index < len(input_string):
-#     print(input_string[index])
-#     index += 1
+   # print(input_string[index])
+    # index += 1
 
 """
 You can also use negative indexing to access characters counting from the end of the string. 
@@ -119,16 +120,16 @@ index ``b`` - that is, including the first, but excluding the last.
 
 Let's have a closer look at some sliced strings:
 """
-# input_string = "presumptious"
-#
-# print(input_string[0:3])
-# print(input_string[4:10])
+input_string = "presumptious"
+
+print(input_string[0:3])
+print(input_string[4:10])
 #
 # # if the beginning index is left out, it defaults to 0
-# print(input_string[:3])
+print(input_string[:3])
 #
 # # if the end index is left out, it defaults to the length of the string
-# print(input_string[4:])
+print(input_string[4:])
 
 """
 In Python string processing the interval [a:b] is half open, which in this case means 
@@ -147,12 +148,12 @@ The Boolean expression a in b is true, if b contains the substring a.
 
 For example, this bit of code
 """
-# input_string = "test"
+input_string = "test"
 #
-# print("t" in input_string)      # True
-# print("x" in input_string)      # False
-# print("es" in input_string)     # True
-# print("ets" in input_string)    # False
+print("t" in input_string)      # True
+print("x" in input_string)      # False
+print("es" in input_string)     # True
+print("ets" in input_string)    # False
 
 """
 The program below lets the user search for substrings within a string hardcoded into the program:
@@ -211,16 +212,16 @@ str.capitalize()
 
 This method returns a copy of the string with its first character capitalized and the others in lowercase.
 """
-# cap = "i Enjoy traveling. Do you?".capitalize() # I enjoy traveling. do you?
-# print(cap)
+cap = "i Enjoy traveling. Do you?".capitalize() # I enjoy traveling. do you?
+print(cap)
 
 """
 str.lower()
 
 This method returns a copy of the string with any character in uppercase to lowercase.
 """
-# lower = "i Enjoy traveling. Do you?".lower()    # i enjoy traveling. do you?
-# print(lower)
+lower = "i Enjoy traveling. Do you?".lower()    # i enjoy traveling. do you?
+print(lower)
 
 """
 str.replace(old, new[, count])
@@ -235,14 +236,14 @@ sentence.replace('Enjoy','dislike')             # "i dislike traveling. Do you?"
 """
 More Examples
 """
-# my_string = "hello world"
-# print(my_string.upper())  # "HELLO WORLD"
-# print(my_string.lower())  # "hello world"
+my_string = "hello world"
+print(my_string.upper())  # "HELLO WORLD"
+print(my_string.lower())  # "hello world"
 #
-# my_string = "   hello world   "
-# print(my_string.strip())   # "hello world"
-# print(my_string.lstrip())  # "hello world   "
-# print(my_string.rstrip())  # "   hello world"
+my_string = "   hello world   "
+print(my_string.strip())   # "hello world"
+print(my_string.lstrip())  # "hello world   "
+print(my_string.rstrip())  # "   hello world"
 
 """
 Looping String with For-Loop
@@ -251,23 +252,23 @@ Strings are so called iterable objects (since the contain a sequence of characte
 That means, we can iterate through them, using a for-loop
 """
 
-# name = "LEON"
-# for character in name:
-#     print(character)
+name = "LEON"
+for character in name:
+    print(character)
 #
 #
-# my_string = "hello"
+my_string = "hello"
 #
-# # Using a while loop to iterate over each character in the string
-# index = 0
-# while index < len(my_string):
-#     print(my_string[index])
-#     index += 1
+## Using a while loop to iterate over each character in the string
+index = 0
+while index < len(my_string):
+     print(my_string[index])
+     index += 1
 #
-# my_string = "hello"
+my_string = "hello"
 #
 # # Using index to access each character in the string
-# for i in range(len(my_string)):
-#     print(my_string[i])
+for i in range(len(my_string)):
+     print(my_string[i])
 
 

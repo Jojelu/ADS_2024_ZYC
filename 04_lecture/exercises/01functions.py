@@ -9,7 +9,14 @@ Define a function called "bark()". When executed, "Woof" should get printed to t
 Execute the function after its definition and run the program!
 """
 
+
 # Write your solution here
+def bark():
+    print("Woof")
+
+
+bark()
+
 
 """
 ### Function with 1 Argument, additional logic ###
@@ -29,7 +36,28 @@ Examples:
     ...
 """
 
+
 # Write your solution here
+def make_sound(animal):
+    animal = animal.lower()
+    if animal == "dog":
+        print("Woof")
+    elif animal == "cat":
+        print("Meow")
+    elif animal == "pig":
+        print("Oink")
+    else:
+        print("???")
+
+
+while True:
+    animal_input = input("enter an animal:")
+    make_sound(animal_input)
+
+
+# while make_sound(animal_input) == "???":
+#   print("Please enter another animal?")
+
 
 """
 ### Function with 2 Arguments ###
@@ -51,6 +79,7 @@ Ask the user repeatedly using a loop.
 """
 
 # Write your solution here
+def print_many_times(text, times):
 
 """
 ### Return Values ###
@@ -67,8 +96,10 @@ Additional Task:
 Add a type hint to the return value of the function!
 """
 
+
 def print_greatest(number):
     print(f"The greatest number is {number}!")
+
 
 # Write your solution here
 

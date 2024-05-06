@@ -10,6 +10,11 @@ Execute the function after its definition and run the program!
 """
 
 # Write your solution here
+# def bark():
+#     print("Woof")
+#
+#
+# bark()
 
 """
 ### Function with 1 Argument, additional logic ###
@@ -29,7 +34,23 @@ Examples:
     ...
 """
 
+
 # Write your solution here
+
+# def make_sound(animal):
+#     animal = animal.lower()
+#     if animal == "dog":
+#         print("Woof")
+#     elif animal == "cat":
+#         print("Meow")
+#     elif animal == "pig":
+#         print("Oink")
+#     else:
+#         print("???")
+
+
+# sound_maker = input("Please enter an animal:")
+# make_sound(sound_maker)
 
 """
 ### Function with 2 Arguments ###
@@ -50,7 +71,20 @@ Instead of "hard coding", let the user enter the text and the number of times to
 Ask the user repeatedly using a loop.
 """
 
+
 # Write your solution here
+def print_many_times(text: str, times: int):
+    for i in range(0, times):
+        print(text)
+
+
+while True:
+    string = input("Please enter a word:\n")
+    if string == "":
+        continue
+    amount = int(input("Please enter a positive number:\n"))
+    if amount >= 1:
+        print_many_times(string, amount)
 
 """
 ### Return Values ###

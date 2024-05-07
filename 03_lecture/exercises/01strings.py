@@ -9,9 +9,11 @@ Example:
     heyheyheyhey
 """
 # Write your solution here
-# word = input("Please type in a string\n")
-# factor = int(input("Please type in an amount\n"))
-# print(word*factor)
+
+# string = input("Please enter a string:\n")
+# amount = int(input("Please enter an amount:\n"))
+# print(string*amount)
+
 """
 Write a program which asks the user for two strings and then prints out whichever is the longer of the two - 
 that is, whichever has the more characters. If the strings are of equal length, the program 
@@ -29,14 +31,15 @@ Examples:
 """
 
 # Write your solution here
-# word1 = input("Please type in string 1\n")
-# word2 = input("Please type in string 2\n")
+# word1 = input("Please enter a word:\n")
+# word2 = input("Please enter another word:\n")
 # if len(word1) > len(word2):
-    # print(word1, "is longer")
+#     print(word1, "ist longer")
 # elif len(word1) == len(word2):
-    # print("The strings are equally long.")
+#     print("The strings are equally long")
 # else:
-    # print(word2, "is longer")
+#     print(word2, "ist longer")
+
 """
 Write a program which asks the user for a string. The program then prints out the input string in reversed order, 
 from end to beginning. Each character should be on a separate line.
@@ -45,20 +48,15 @@ Try to solve this example in 2 ways:
     * once using negative indeces
 """
 # Write your solution here
+# string = input("Please enter a string:\n")
+# for i in range(len(string)):
+#     print(string[i])
 
-# input_string = input("Please type in a string:\n")
-# index = 1
-# while index < len(input_string) + 1:
-   # print(input_string[len(input_string)-index])
-    # index += 1
+# string = input("Please enter a string:\n")
+# for i in range(-1, -len(string)-1, -1):
+#     print(string[i])
 
-input_string = input("Please type in a string:\n")
-index = - 1
-while index > - len(input_string) - 1:
-    print(input_string[index])
-    index -= 1
-
-"""
+""" 
 Write a program which asks the user for a string. 
 The program then prints out a message based on whether the second character and the second to last character 
 are the same or not. See the examples below.
@@ -71,7 +69,11 @@ Examples:
     The second and the second to last characters are a
 """
 # Write your solution here
-
+# string = input("Please enter a string:\n")
+# if string[1] == string[-2]:
+#     print("The second and the second to last characters are", string[1])
+# else:
+#     print("The second and the second to last characters are different.")
 """
 Write a program which prints out a line of hash characters, the width of which is chosen by the user.
 
@@ -83,6 +85,8 @@ Examples:
     ##
 """
 # Write your solution here
+# width = int(input("Please enter a number for the width:\n"))
+# print("#"*width)
 
 """
 Modify the previous program so that it also asks for the height, and prints out a rectangle of hash characters accordingly.
@@ -95,6 +99,10 @@ Example:
     ##########
 """
 # Write your solution here
+# width = int(input("Please enter a number for width:\n"))
+# height = int(input("Please enter a number for height:\n"))
+# for i in range(height):
+#     print("#"*width)
 
 """
 Write a program which asks the user for a string and then prints it out so that exactly 20 characters are displayed. 
@@ -110,7 +118,9 @@ Examples:
     **********helloworld 
 """
 # Write your solution here
-
+# string = input("Please enter a word of max. 20 characters:\n")
+# factor = 20 - len(string)
+# print("*"*factor + string)
 """
 Please write a program which asks the user for a string and then prints out a frame of * characters with the word in the centre. 
 The width of the frame should be 30 characters. You may assume the input string will always fit inside the frame.
@@ -131,8 +141,12 @@ Examples:
     ******************************
 """
 # Write your solution here
-
-
+# word = input("Please enter a word of max. 28 characters:\n")
+# frame_width = 30
+# print("*" * frame_width)
+# white_space = int(frame_width / 2 - int(len(word) / 2) - 1)
+# print("*" + " "*white_space + word + " "*white_space + "*")
+# print("*" * frame_width)
 """
 Write a program which asks the user to type in a string. 
 The program then prints out all the substrings which begin with the first character, 
@@ -146,6 +160,9 @@ Example:
     test
 """
 # Write your solution here
+# string = input("Please enter a word:\n")
+# for i in range(1, len(string)+1):
+#     print(string[0:i])
 
 """
 Write a program which asks the user to type in a string. 
@@ -160,6 +177,10 @@ Example:
     test
 """
 # Write your solution here
+
+# string = input("Please enter a word:\n")
+# for i in range(len(string)-1, -1, -1):
+#     print(string[i:])
 
 """
 Write a program which asks the user to input a string. The program then prints out different messages if the string 
@@ -179,6 +200,20 @@ You may assume the input will be in lowercase entirely. Have a look at the examp
 """
 # Write your solution here
 
+# string = input("Please enter a word:\n")
+# string = string.lower()
+# if "a" in string:
+#     print("a found")
+# else:
+#     print("a not found")
+# if "e" in string:
+#     print("e found")
+# else:
+#     print("e not found")
+# if "o" in string:
+#     print("o found")
+# else:
+#     print("o not found")
 
 """
 Write a program which asks the user to type in a string and a single character. The program then 
@@ -205,6 +240,12 @@ Examples:
 """
 # Write your solution here
 
+# string = input("Please enter a word:\n")
+# starting_char = input("Please enter a character:\n")
+# starting_index = string.find(starting_char)
+# if len(string[starting_index:]) > 3:
+#     print(string[starting_index:starting_index + 3])
+
 """
 Write a program which finds the second occurrence of a substring. If there is no second (or first) occurrence, 
 the program should print out a message accordingly.
@@ -227,3 +268,12 @@ Examples:
     The substring does not occur twice in the string.
 """
 # Write your solution here
+string = input("Please enter a string:\n")
+substring = input("Please enter a substring:\n")
+start_index = string.find(substring)
+end_index = start_index + len(substring)
+substring_new = string[end_index:]
+if substring in substring_new:
+    print(substring_new.find(substring) + end_index)
+else:
+    print("The substring does not occur twice in the string.")

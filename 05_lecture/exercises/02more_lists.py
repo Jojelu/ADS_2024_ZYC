@@ -12,7 +12,12 @@ For example, with the function call list_of_stars([3, 7, 1, 1, 2]) the following
 
 """
 # Provide your solution here
+def list_of_stars(numbers:[int]):
+    for i in numbers:
+        print("*" * i)
 
+
+list_of_stars([10,11,14])
 """
 Write a function named anagrams, which takes two strings as arguments. 
 The function returns True if the strings are anagrams of each other. 

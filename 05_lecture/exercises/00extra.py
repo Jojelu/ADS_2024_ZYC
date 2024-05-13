@@ -15,6 +15,16 @@ Example Output:
 """
 
 # Write your solution here
+mylist = []
+for i in range(1, 21):
+    mylist.append(i)
+print(mylist)
+new_list = mylist
+
+for i in range(1, 21):
+   if i % 2 == 1:
+     new_list.remove(i)
+print(new_list)
 
 """
 ### Exercise 2: Todo List Application ###
@@ -40,6 +50,27 @@ Example Interaction:
     Final tasks: ['Buy milk']
     Exiting...
 """
+mylist = []
+while True:
+    user_input = input("please enter a task or command:\n")
+    if user_input == "remove":
+        mylist.pop(len(mylist)-1)
+        print("Last task removed")
+    elif user_input == "view":
+        print("Current tasks:", mylist)
+    elif user_input == "done":
+        print("Final tasks:", mylist)
+        break
+    else:
+        mylist.append(user_input)
+        print("Task added.")
+
+
+
+
+
+
+
 
 # Write your solution here
 

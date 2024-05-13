@@ -10,6 +10,8 @@ Print the third color in the list.
 """
 
 # Write your solution here
+mylist = ["blue", "white", "yellow", "red", "green"]
+print(mylist[2])
 
 """
 ### List Mutability ###

@@ -73,18 +73,18 @@ Ask the user repeatedly using a loop.
 
 
 # Write your solution here
-def print_many_times(text: str, times: int):
-    for i in range(0, times):
-        print(text)
+# def print_many_times(text: str, times: int):
+#    for i in range(0, times):
+ #       print(text)
 
 
-while True:
-    string = input("Please enter a word:\n")
-    if string == "":
-        continue
-    amount = int(input("Please enter a positive number:\n"))
-    if amount >= 1:
-        print_many_times(string, amount)
+# while True:
+    #string = input("Please enter a word:\n")
+    #if string == "":
+    #    continue
+   # amount = int(input("Please enter a positive number:\n"))
+   # if amount >= 1:
+      #  print_many_times(string, amount)
 
 """
 ### Return Values ###
@@ -102,6 +102,17 @@ Add a type hint to the return value of the function!
 """
 
 # Write your solution here
+
+def greatest_number(x, y, z) -> int:
+    if x > y and x > z:
+        return x
+    elif y > z:
+        return y
+    else:
+        return z
+
+result = greatest_number(6, 7, 9)
+print("the greatest number is ", result)
 
 """
 ### Type Hints ###

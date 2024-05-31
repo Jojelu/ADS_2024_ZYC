@@ -57,7 +57,7 @@ print(check_match("1[234]+5", "15"))
 
 # The ^ character specifies that the match must be at the beginning of the string,
 # and $ specifies that the match must be at the end of the string
-print(check_match("^[123]*$", "333333"))
+print(check_match("^[123]*$", "1"))
 
 # escape characters with "\"
 print(check_match("^\*", "*moi"))
@@ -67,3 +67,9 @@ print(check_match("^(jabba).*(hut)$", "jabba the hut"))
 print(check_match("^(jabba).*(hut)$", "jabba a hut"))
 
 print(check_match("^12.+34$", "12C34"))
+
+
+
+print(check_match("12.?34", "1267834"))
+#print(check_match("1.", "123"))
+

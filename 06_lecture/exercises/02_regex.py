@@ -9,6 +9,16 @@ Examples:
     print(is_dotw("Fri")) # True
     print(is_dotw("Tui")) # False
 """
+def is_dotw(my_string: str):
+    pattern = r'^(Mon|Tue|Wed|Thu|Fri|Sat|Sun)$'
+    return bool(re.search(pattern, my_string))
+
+# Examples
+print(is_dotw("Mon"))  # True
+print(is_dotw("Fri"))  # True
+print(is_dotw("Tui"))  # False
+print(is_dotw("Today is Wednesday"))  # True
+print(is_dotw("Tomorrow is Thrs"))  # False
 
 def is_dotw(my_string:str):
     pattern = r'^(Mon|Tue|Wed|Thu|Fri|Sat|Sun)$'
@@ -24,12 +34,19 @@ Some examples of how the function should work:
     print(all_vowels("eioueioieoieou")) # True
     print(all_vowels("autoooo"))        # False
 """
-import re
+
 def all_vowels(my_string: str):
     pattern = r'^[aeiouAEIOU]+$'
     return bool(re.search(pattern, my_string))
 
-print(all_vowels)
+
+# Examples
+print("vowels:")
+print(all_vowels("eioueioieoieou"))  # True
+print(all_vowels("autoooo"))         # False
+print(all_vowels("AEIOU"))           # True
+print(all_vowels("aEiOu"))           # True
+print(all_vowels("hello"))           # False
 
 """
 Write a function named time_of_day(my_string: str) which uses a regular expression to check whether 
@@ -45,3 +62,15 @@ Some examples of how the function should work:
 
 def time_of_day(my_string: str):
     pattern = r'^(2[0-3][01][0-9]):([0-5][0-9]):([0-5][0-9])$'
+
+def time_of_day(my_string: str):
+    # regular expression pattern for matching valid 24-hour time format
+    pattern = r'^(2[0-3]|[0-1][0-9]):([0-5][0-9]):([0-5][0-9])$'
+    return bool(re.search(pattern, my_string))
+
+# Examples
+print(time_of_day("12:43:01"))  # True
+print(time_of_day("AB:01:CD"))  # False
+print(time_of_day("17:59:59"))  # True
+print(time_of_day("33:66:77"))  # False
+

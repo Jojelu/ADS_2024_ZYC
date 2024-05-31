@@ -1,3 +1,4 @@
+import re
 """
 Using a regular expression, please write a function named is_dotw(my_string: str).
 The function should return True if the string passed as an argument contains an abbreviation
@@ -9,6 +10,11 @@ Examples:
     print(is_dotw("Tui")) # False
 """
 
+def is_dotw(my_string:str):
+    pattern = r'^(Mon|Tue|Wed|Thu|Fri|Sat|Sun)$'
+    return bool(re.search(pattern, my_string))
+
+print(is_dotw("Mon"))
 
 """
 Write a function named all_vowels(my_string: str) which uses a regular expression to check whether all characters in the given string are vowels.
@@ -18,6 +24,12 @@ Some examples of how the function should work:
     print(all_vowels("eioueioieoieou")) # True
     print(all_vowels("autoooo"))        # False
 """
+import re
+def all_vowels(my_string: str):
+    pattern = r'^[aeiouAEIOU]+$'
+    return bool(re.search(pattern, my_string))
+
+print(all_vowels)
 
 """
 Write a function named time_of_day(my_string: str) which uses a regular expression to check whether 
@@ -30,3 +42,6 @@ Some examples of how the function should work:
     print(time_of_day("17:59:59"))  # True
     print(time_of_day("33:66:77"))  # False
 """
+
+def time_of_day(my_string: str):
+    pattern = r'^(2[0-3][01][0-9]):([0-5][0-9]):([0-5][0-9])$'

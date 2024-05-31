@@ -66,3 +66,4 @@ print(check_match("^\*", "*moi"))
 print(check_match("^(jabba).*(hut)$", "jabba the hut"))
 print(check_match("^(jabba).*(hut)$", "jabba a hut"))
 
+print(check_match("^12.+34$", "12C34"))
